@@ -1,0 +1,45 @@
+{
+    "name": "vilbur/gallery",
+    "type": "library",
+    "description": "Gallery for development of packages for Laravel",
+    "keywords": [
+        "vilbur",
+        "Gallery"
+    ],
+    "homepage": "https://github.com/vilbur/laravel-package-gallery",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vilbur",
+            "email": "cerny.vil@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Vilbur\\Gallery\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vilbur\\Gallery\\": "tests/"
+        }
+    },
+    "extra": {
+		"laravel": {
+            "providers": [
+                "Vilbur\\Gallery\\Providers\\GalleryServiceProvider"
+            ],
+            "aliases": {
+				"Gallery":"Vilbur\\Gallery\\Gallery"
+			}
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
